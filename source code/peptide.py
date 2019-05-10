@@ -27,13 +27,13 @@ class Peptide:
         sim = False if sim == None else sim
         verbose = False if verbose == None else verbose
         self.seq = seq
-        rob = __import__ ('rob')
-        self.pip = rob.Pipette(83,"http://10.0.3.1", "P1000" , tip = "tip1000",to=1,verbose= verbose, sim = sim )
-        self.ap = rob.WorkingSpace(self.pip)
-        self.peptizer = rob.Peptidizer("http://10.0.3.99", rpm = 320 , verbose = verbose , sim = sim )
+        findus = __import__ ('findus')
+        self.pip = findus.Pipette(83,"http://10.0.3.1", "P1000" , tip = "tip1000",to=1,verbose= verbose, sim = sim )
+        self.ap = findus.WorkingSpace(self.pip)
+        self.peptizer = findus.Peptidizer("http://10.0.3.99", rpm = 320 , verbose = verbose , sim = sim )
     #syringe
         syringe = None
-        syringe = rob.Rack(52)
+        syringe = findus.Rack(52)
         syringe.setXY([37500,64200])
         syringe.setupRack(0 , 1 , 1 , bin_type="syringe10")
         self.ap.addRack("syringe" , syringe)
