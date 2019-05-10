@@ -1,7 +1,7 @@
 #to start:
-#import rob
-#ap = rob.WorkingSpace(rob.Pipette(63,"http://10.0.3.1","P200", tip = "tip200",to=1,verbose=True ))
-#Assay=rob.Assay(ap)
+#import findus
+#ap = findus.WorkingSpace(findus.Pipette(63,"http://10.0.3.1","P200", tip = "tip200",to=1,verbose=True ))
+#Assay=findus.Assay(ap)
 #Assay.checkVol(check=True)
 #Assay.run(<column_wp96>)
 
