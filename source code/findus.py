@@ -9,7 +9,7 @@ class Bin:
     y = 0
     z = 0      # Actual Fill level measured from z_0 Positive direction
     z_0 = 0    # Bottom of top edge negative direction
-    z_max = 0  # from top edge negative direction
+    z_max = 0  # From top edge negative direction
     h = 0      # Height vessel  
     d = 0
     vol = 0
